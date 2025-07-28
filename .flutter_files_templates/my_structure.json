@@ -1,0 +1,21 @@
+{
+  "name": "My Flutter Base",
+  "structure": [
+    {
+      "name": "screens",
+      "files": ["{name}_screen.dart"]
+    },
+    {
+      "name": "models",
+      "files": ["{name}_model.dart"]
+    },
+    {
+      "name": "services",
+      "files": ["{name}_service.dart"]
+    },
+    {
+      "name": "widgets",
+      "files": ["custom_button.dart"]
+    }
+  ]
+}
