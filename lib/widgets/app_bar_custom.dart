@@ -19,6 +19,7 @@ class AppBarWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.fromLTRB(0, 66, 16, 0),
       decoration: const BoxDecoration(
         color: Color(0xff254ee0),
         borderRadius: BorderRadius.only(
@@ -26,7 +27,6 @@ class AppBarWidgets extends StatelessWidget {
           bottomRight: Radius.circular(20),
         ),
       ),
-      padding: const EdgeInsets.fromLTRB(0, 66, 16, 0),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(18, 0, 16, 0),
         child: Row(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app_wallet/screens/chi_tiet_nhiem_vu_screens.dart';
+import 'package:app_wallet/screens/task_detail_screen.dart';
 
 class NhiemVuWidgets extends StatelessWidget {
   final String? text;

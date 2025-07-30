@@ -43,9 +43,13 @@ class SuKienWidgets extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Flexible(
+                // Dùng SizedBox thay vì Flexible để tránh lỗi "unbounded width"
+                SizedBox(
+                  width: 80,
                   child: Text(
                     text ?? '',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.w600,

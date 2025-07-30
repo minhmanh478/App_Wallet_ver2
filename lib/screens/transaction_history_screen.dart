@@ -1,4 +1,4 @@
-import 'package:app_wallet/widgets/giaodich_widgets.dart';
+import 'package:app_wallet/widgets/transaction_widgets.dart';
 import 'package:flutter/material.dart';
 
 class LichSuGiaoDichScreen extends StatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:app_wallet/screens/vi_cua_toi.dart';
+import 'package:app_wallet/screens/my_wallet_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

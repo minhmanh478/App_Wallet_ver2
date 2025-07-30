@@ -1,11 +1,11 @@
-import 'package:app_wallet/screens/lich_sugiaodich_screen.dart';
-import 'package:app_wallet/screens/nhiem_vu_screens.dart';
-import 'package:app_wallet/screens/su_kien_screen.dart';
+import 'package:app_wallet/screens/task_screen.dart';
+import 'package:app_wallet/screens/event_screen.dart';
+import 'package:app_wallet/screens/transaction_history_screen.dart';
 import 'package:app_wallet/widgets/app_bar_custom.dart';
-import 'package:app_wallet/widgets/diem_danh_widgets.dart';
+import 'package:app_wallet/widgets/check_in_widget.dart';
 import 'package:app_wallet/widgets/menu_widget.dart';
-import 'package:app_wallet/widgets/nhiem_vu_widgets.dart';
-import 'package:app_wallet/widgets/su_kien_widgets.dart';
+import 'package:app_wallet/widgets/task_widgets.dart';
+import 'package:app_wallet/widgets/event_widget.dart';
 import 'package:flutter/material.dart';
 
 class ViCuaToiScreen extends StatelessWidget {
@@ -13,6 +13,12 @@ class ViCuaToiScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var diemDanhWidgets = DiemDanhWidgets(
+      coinText: '+100',
+      iconPath: 'assets/icons/verify.png',
+      bottomText: 'Ngày 5',
+      onTap: () {},
+    );
     return Scaffold(
       backgroundColor: const Color(0xFFDEE9FF),
       body: SingleChildScrollView(
@@ -149,12 +155,7 @@ class ViCuaToiScreen extends StatelessWidget {
                           bottomText: 'Ngày 4',
                           onTap: () {},
                         ),
-                        DiemDanhWidgets(
-                          coinText: '+100',
-                          iconPath: 'assets/icons/verify.png',
-                          bottomText: 'Ngày 5',
-                          onTap: () {},
-                        ),
+                        diemDanhWidgets,
                         DiemDanhWidgets(
                           coinText: '+100',
                           iconPath: 'assets/icons/verify.png',
